@@ -8,7 +8,8 @@
 >[`MyArray#binarySearch(Integer[] arr, Integer x)`](./src/main/java/MyArray.java#L2-L24)
 
 ### [QuickSort](https://en.wikipedia.org/wiki/Quicksort) *&larr; Runtime: O(n log(n)); Memory: O(log(n))*
->[`MyArray#quickSort(Integer[] arr)`](./src/main/java/MyArray.java#L25-L60) *&larr; The partitioning element is not guaranteed to be the median &rarr; worst case runtime O(n^2)*
+The partitioning element is not guaranteed to be the median &rarr; worst case runtime O(n^2)
+>[`MyArray#quickSort(Integer[] arr)`](./src/main/java/MyArray.java#L25-L60)
 
 ### [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort) *&larr; Runtime: O(n log(n)); Memory: O(n)*
 >[`MyArray#mergeSort(Integer[] arr)`](./src/main/java/MyArray.java#L61-L96)

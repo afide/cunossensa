@@ -8,6 +8,8 @@ CS and other fundamentals.
 1. [More Build Information](#more-build-information)
 1. [Import into IDE](#import-into-ide)
 1. [Concepts](./concepts.md)
+1. [Data Structures and Algorithms](./dsa/)
+1. [Distributed Ledger Technology](./dlt/)
 
 #### Prerequisites
 This project requires a Java JDK version 8 or higher to be installed.

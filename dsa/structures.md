@@ -55,7 +55,9 @@ Dealing with **Hash collisions** *&larr; Practically unavoidable*
 
 #### [Depth-First Search (DFS)](https://en.wikipedia.org/wiki/Tree_traversal) *&larr; Runtime: O(b^d); Memory: O(bd)*
 >[`MyTree#depthFirstSearchLNR()`](./src/main/java/MyTree.java#L32-L42)
+
 >[`MyTree#depthFirstSearchNLR()`](./src/main/java/MyTree.java#L43-L53)
+
 >[`MyTree#depthFirstSearchLRN()`](./src/main/java/MyTree.java#L54-L64)
 
 #### [Breadth-First Search (BFS)](https://en.wikipedia.org/wiki/Tree_traversal) *&larr; Runtime: O(b^d); Memory: O(b^d)*
