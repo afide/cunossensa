@@ -26,6 +26,7 @@
 Threads within a given process share the same memory space:
 - **Positive** *&larr; Enables threads to share data, which can be valuable*
 - **Negative** *&larr; Potential issues when two threads modify a resource at the same time*
+###### Main
 >[`MyThread`](./src/main/java/MyThread.java)
 
 ### [Deadlocks](https://en.wikipedia.org/wiki/Deadlock)

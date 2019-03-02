@@ -17,22 +17,33 @@ Dealing with **Hash collisions** *&larr; Practically unavoidable*
 - Amortized insertion time *&larr; still O(1)*
 
 **StringBuilder** *&larr; Creates a resizable array of all the strings*
+###### Main
 >[`MyStringBuilder`](./src/main/java/MyStringBuilder.java)
 
 ### [Linked List](https://en.wikipedia.org/wiki/Linked_list)
+###### Main
 >[`MyLinkedList<T>`](./src/main/java/MyLinkedList.java)
+###### Test
+>[`MyLinkedListSpecification`](./src/test/groovy/MyLinkedListSpecification.groovy)
 
 ### [Stack](https://en.wikipedia.org/wiki/Stack_\(abstract_data_type\))
+###### Main
 >[`MyStack<T>`](./src/main/java/MyStack.java)
+###### Test
+>[`MyStackSpecification`](./src/test/groovy/MyStackSpecification.groovy)
 
 ### [Queue](https://en.wikipedia.org/wiki/Queue_\(abstract_data_type\))
+###### Main
 >[`MyQueue<T>`](./src/main/java/MyQueue.java)
+###### Test
+>[`MyQueueSpecification`](./src/test/groovy/MyQueueSpecification.groovy)
 
 ### [Graph](https://en.wikipedia.org/wiki/Graph_\(abstract_data_type\)) *&larr;  A collection of nodes with edges between (some of) them*
 - **Directed graph** *&larr; like a one-way street*
 - **Undirected graph** *&larr; like a two-way street*
 - **Connected graph** *&larr; There is a path (edge) between every pair of vertices (nodes)*
 - **Acyclic graph**
+###### Main
 >[`MyGraph`](./src/main/java/MyGraph.java)
 
 #### [Adjacency List](https://en.wikipedia.org/wiki/Adjacency_list) *&larr; Every node stores a list of adjacent nodes. In an undirected graph, an edge like (a, b) would be stored twice: once in a's adjacent nodes and once in b's adjacent nodes.*
@@ -54,14 +65,21 @@ Dealing with **Hash collisions** *&larr; Practically unavoidable*
 
 
 #### [Depth-First Search (DFS)](https://en.wikipedia.org/wiki/Tree_traversal) *&larr; Runtime: O(b^d); Memory: O(bd)*
+###### Main
 >[`MyTree#depthFirstSearchLNR()`](./src/main/java/MyTree.java#L32-L42)
 
 >[`MyTree#depthFirstSearchNLR()`](./src/main/java/MyTree.java#L43-L53)
 
 >[`MyTree#depthFirstSearchLRN()`](./src/main/java/MyTree.java#L54-L64)
 
+###### Test
+>[`MyTreeSpecification`](./src/test/groovy/MyTreeSpecification.groovy)
+
 #### [Breadth-First Search (BFS)](https://en.wikipedia.org/wiki/Tree_traversal) *&larr; Runtime: O(b^d); Memory: O(b^d)*
+###### Main
 >[`MyTree#breadthFirstSearch()`](./src/main/java/MyTree.java#L65-L90)
+###### Test
+>[`MyTreeSpecification`](./src/test/groovy/MyTreeSpecification.groovy)
 
 #### Bidirectional Search *&larr; Essentially two simultaneous BFSs, one from each node; when their searches collide, we have found a path*
 

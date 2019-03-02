@@ -45,5 +45,4 @@ class MyTreeSpecification extends Specification {
         expect: 'the letters being printed in BFS order'
         tree.breadthFirstSearch()
     }
-
 }

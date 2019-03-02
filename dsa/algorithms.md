@@ -5,14 +5,23 @@
 ### [Radix Sort](https://en.wikipedia.org/wiki/Radix_sort) *&larr; Runtime: O(nk); Memory: O(n+k)*
 
 ### [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm) *&larr; Runtime: O(log n); Memory: O(1)*
+###### Main
 >[`MyArray#binarySearch(Integer[] arr, Integer x)`](./src/main/java/MyArray.java#L2-L24)
+###### Test
+>[`MyArraySpecification`](./src/test/groovy/MyArraySpecification.groovy)
 
 ### [QuickSort](https://en.wikipedia.org/wiki/Quicksort) *&larr; Runtime: O(n log(n)); Memory: O(log(n))*
 The partitioning element is not guaranteed to be the median &rarr; worst case runtime O(n^2)
+###### Main
 >[`MyArray#quickSort(Integer[] arr)`](./src/main/java/MyArray.java#L25-L60)
+###### Test
+>[`MyArraySpecification`](./src/test/groovy/MyArraySpecification.groovy)
 
 ### [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort) *&larr; Runtime: O(n log(n)); Memory: O(n)*
+###### Main
 >[`MyArray#mergeSort(Integer[] arr)`](./src/main/java/MyArray.java#L61-L96)
+###### Test
+>[`MyArraySpecification`](./src/test/groovy/MyArraySpecification.groovy)
 
 ### More Information
 - [Algorithms, 4th Edition](https://algs4.cs.princeton.edu/home/)
