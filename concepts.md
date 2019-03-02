@@ -64,4 +64,3 @@ int fibonacci(int n) {
     - **Read-heavy** *&larr; Might require caching*
     - **Write-heavy** *&larr; Consider queuing up the writes*
     - **Security** *&larr; Can be devastating for a system*
-<style>em { color: gray }</style>

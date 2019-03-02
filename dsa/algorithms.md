@@ -111,4 +111,3 @@ class MyArray {
 
 ### More Information
 - [Algorithms, 4th Edition](https://algs4.cs.princeton.edu/home/)
-<style>em { color: gray }</style>

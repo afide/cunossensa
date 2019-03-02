@@ -85,4 +85,3 @@ In order for a deadlock to occur, you must have all four of the following condit
 1. **Mutual Exclusion** *&larr; Processes already holding a resource can request additional resources, without relinquishing their current resources*
 1. **No Preemption** *&larr; One process cannot forcibly remove another process' resource*
 1. **Circular Wait** *&larr; Circular chain where each process is waiting on another resource in the chain*
-<style>em { color: gray }</style>

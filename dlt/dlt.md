@@ -1,4 +1,4 @@
-### [Bitcoin](https://medium.com/@ConsenSys/thoughts-on-utxo-by-vitalik-buterin-2bb782c67e53) *(stateless UTXOs)*
+### [Bitcoin](https://medium.com/@ConsenSys/thoughts-on-utxo-by-vitalik-buterin-2bb782c67e53) *&larr; stateless UTXOs*
 - **Inherent transaction rate limit** *&larr; All participants agree on the longest chain and discard forks and side branches*
 - **Bitcon transaction model** - 1..n UTXOs &rarr; tx &rarr; 1..m UTXOs
 - **UTXO** - Unspent transaction output
@@ -7,7 +7,7 @@
 - UTXOs are unnecessarily **complicated**
 - UTXOs are **stateless**, and so are not well-suited to applications more complex than asset transfers *&larr; e.g. multiple phases smart contracts*
 
-### [Ethereum ](C:\home\sag\papers\coins\ethereum\afWDt.jpg) *(accounts plus stateful scripting language)*
+### [Ethereum ](C:\home\sag\papers\coins\ethereum\afWDt.jpg) *&larr; accounts plus stateful scripting language*
 - **Contract** - Account controlled by a piece of code
 - **Block** &larr; `state root`, `transaction root`, `transaction receipt root`
     - **World state trie** (merkle-particia) &larr; `account` &larr; `storage root` &larr; **Storage trie** (merkle-patricia of RLP values)
@@ -70,4 +70,3 @@ A special variant of the radix 2 (binary) trie, in which rather than explicitly 
 - **Latency** *&larr; Not constrained by block-size, but bandwidth between communicating peers*
 - **Feeless** *&larr; Pre-mined: Fixed supply, no mining involved*
 - **Database pruning** *&larr; Allows for keeping database slim and different nodes can save only the history they are interested in*
-<style>em { color: gray }</style>

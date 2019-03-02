@@ -1,4 +1,4 @@
-### [Hashmap](https://en.wikipedia.org/wiki/Hash_table)
+### [Hash Map](https://en.wikipedia.org/wiki/Hash_table)
 `key`\
 &rarr; `hash = hashfunc(key)`\
 &rarr; `i = hash % buckets.length`\
@@ -11,7 +11,7 @@ Dealing with **Hash collisions** *&larr; Practically unavoidable*
 - Open Addressing with Linear **Probing** *&larr; Move on to the next index in the array until we find an open spot*
 - Quadratic **Probing** and Double Hashing *&larr; Non-linear distance between probes; use a second hash function to determine the probe distance*
 
-### [ArrayList](https://en.wikipedia.org/wiki/Dynamic_array)
+### [Array List](https://en.wikipedia.org/wiki/Dynamic_array)
 - Resizes itself as needed *&larr; Still provids O(1) access*
 - Typically, when the array is full, the array doubles in size *&larr; Each doubling takes 0(n) time, but happens rarely*
 - Amortized insertion time *&larr; still O(1)*
@@ -75,7 +75,7 @@ class MyLinkedList<T> {
     }
 }
 ```
-### [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+### [Stack](https://en.wikipedia.org/wiki/Stack_\(abstract_data_type\))
 ```
 import java.util.EmptyStackException;
 
@@ -114,7 +114,7 @@ class MyStack<T> {
     }
 }
 ```
-### [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+### [Queue](https://en.wikipedia.org/wiki/Queue_\(abstract_data_type\))
 ```
 import java.util.NoSuchElementException;
 
@@ -162,7 +162,7 @@ class MyQueue<T> {
     }
 }
 ```
-### [Graph](https://en.wikipedia.org/wiki/Graph_(abstract_data_type)) *&larr;  A collection of nodes with edges between (some of) them*
+### [Graph](https://en.wikipedia.org/wiki/Graph_\(abstract_data_type\)) *&larr;  A collection of nodes with edges between (some of) them*
 - **Directed graph** *&larr; like a one-way street*
 - **Undirected graph** *&larr; like a two-way street*
 - **Connected graph** *&larr; There is a path (edge) between every pair of vertices (nodes)*
@@ -180,7 +180,7 @@ class MyGraph {
 ```
 #### [Adjacency Matrices](https://en.wikipedia.org/wiki/Adjacency_matrix) *&larr; An `NxN` boolean matrix (where `N` is the number of nodes), where a true value at `matrix[i][j]` indicates an edge from node `i` to node `j`.*
 
-### [Trees, Tries, Heaps](https://en.wikipedia.org/wiki/Tree_(data_structure)) *&larr; A tree is a connected acyclic graph*
+### [Trees, Tries, Heaps](https://en.wikipedia.org/wiki/Tree_\(data_structure\)) *&larr; A tree is a connected acyclic graph*
 - **Binary tree** *&larr; Each node has **up to two children***
     - **Complete binary tree** - Binary heap (min-heap/max-heap) *&larr; Every level of the tree is fully filled, except perhaps the last level; to the extent that the last level is filled, it is filled **left to right***
     - **Full binary tree** *&larr; Every node has either **zero or two children***
@@ -194,7 +194,7 @@ class MyGraph {
 - **Leaf node** *&larr; No children*
 
 
-#### [Depth-First Search (DFS)](https://en.wikipedia.org/wiki/Tree_traversal) *&larr; Runtime: O(b^d^); Memory: O(bd)*
+#### [Depth-First Search (DFS)](https://en.wikipedia.org/wiki/Tree_traversal) *&larr; Runtime: O(b^d); Memory: O(bd)*
 ```
 class MyTree {
     private static class Node {
@@ -263,7 +263,7 @@ class MyTree {
 }
 ```
 
-#### [Breadth-First Search (BFS)](https://en.wikipedia.org/wiki/Tree_traversal) *&larr; Runtime: O(b^d^); Memory: O(b^d^)*
+#### [Breadth-First Search (BFS)](https://en.wikipedia.org/wiki/Tree_traversal) *&larr; Runtime: O(b^d); Memory: O(b^d)*
 ```
 class MyTree {
     private static class Node {
@@ -335,4 +335,6 @@ class MyTree {
     - it's always at the top &rarr; remove top element
     - than swap with bottom rightmost spot *&larr; to maintain the **complete** tree property.*
     - than swap with child element of lesser/larger value
-<style>em { color: gray }</style>
+
+### More Information
+- [Algorithms, 4th Edition](https://algs4.cs.princeton.edu/home/)
