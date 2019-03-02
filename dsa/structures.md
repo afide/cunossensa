@@ -38,19 +38,23 @@ Dealing with **Hash collisions** *&larr; Practically unavoidable*
 ###### Test
 >[`MyQueueSpecification`](./src/test/groovy/MyQueueSpecification.groovy)
 
-### [Graph](https://en.wikipedia.org/wiki/Graph_\(abstract_data_type\)) *&larr;  A collection of nodes with edges between (some of) them*
-- **Directed graph** *&larr; like a one-way street*
-- **Undirected graph** *&larr; like a two-way street*
+### [Graph](https://en.wikipedia.org/wiki/Graph_\(abstract_data_type\))
+A collection of nodes with edges between (some of) them.
+- **Directed graph** *&larr; Like a one-way street*
+- **Undirected graph** *&larr; Like a two-way street*
 - **Connected graph** *&larr; There is a path (edge) between every pair of vertices (nodes)*
 - **Acyclic graph**
 ###### Main
 >[`MyGraph`](./src/main/java/MyGraph.java)
 
-#### [Adjacency List](https://en.wikipedia.org/wiki/Adjacency_list) *&larr; Every node stores a list of adjacent nodes. In an undirected graph, an edge like (a, b) would be stored twice: once in a's adjacent nodes and once in b's adjacent nodes.*
+#### [Adjacency List](https://en.wikipedia.org/wiki/Adjacency_list)
+Every node stores a list of adjacent nodes. In an undirected graph, an edge like (a, b) would be stored twice: once in a's adjacent nodes and once in b's adjacent nodes.
 
-#### [Adjacency Matrices](https://en.wikipedia.org/wiki/Adjacency_matrix) *&larr; An `NxN` boolean matrix (where `N` is the number of nodes), where a true value at `matrix[i][j]` indicates an edge from node `i` to node `j`.*
+#### [Adjacency Matrices](https://en.wikipedia.org/wiki/Adjacency_matrix)
+An `nxn` boolean matrix (where `n` is the number of nodes), where a true value at `matrix[i][j]` indicates an edge from node `i` to node `j`.
 
-### [Trees, Tries, Heaps](https://en.wikipedia.org/wiki/Tree_\(data_structure\)) *&larr; A tree is a connected acyclic graph*
+### [Trees, Tries, Heaps](https://en.wikipedia.org/wiki/Tree_\(data_structure\))
+A tree is a connected acyclic graph.
 - **Binary tree** *&larr; Each node has **up to two children***
     - **Complete binary tree** - Binary heap (min-heap/max-heap) *&larr; Every level of the tree is fully filled, except perhaps the last level; to the extent that the last level is filled, it is filled **left to right***
     - **Full binary tree** *&larr; Every node has either **zero or two children***
@@ -62,26 +66,6 @@ Dealing with **Hash collisions** *&larr; Practically unavoidable*
     - **Trie (aka digital/[radix](https://en.wikipedia.org/wiki/Radix_tree)/prefix tree)** *&larr; Characters are stored at each node; each path down the tree may represent a word.*
 - **Balanced tree** - [AVL tree](https://en.wikipedia.org/wiki/AVL_tree), [Red-black tree](https://en.wikipedia.org/wiki/Red–black_tree) *&larr; Rather means "not terribly imbalanced"*
 - **Leaf node** *&larr; No children*
-
-
-#### [Depth-First Search (DFS)](https://en.wikipedia.org/wiki/Tree_traversal) *&larr; Runtime: O(b^d); Memory: O(bd)*
-###### Main
->[`MyTree#depthFirstSearchLNR()`](./src/main/java/MyTree.java#L32-L42)
-
->[`MyTree#depthFirstSearchNLR()`](./src/main/java/MyTree.java#L43-L53)
-
->[`MyTree#depthFirstSearchLRN()`](./src/main/java/MyTree.java#L54-L64)
-
-###### Test
->[`MyTreeSpecification`](./src/test/groovy/MyTreeSpecification.groovy)
-
-#### [Breadth-First Search (BFS)](https://en.wikipedia.org/wiki/Tree_traversal) *&larr; Runtime: O(b^d); Memory: O(b^d)*
-###### Main
->[`MyTree#breadthFirstSearch()`](./src/main/java/MyTree.java#L65-L90)
-###### Test
->[`MyTreeSpecification`](./src/test/groovy/MyTreeSpecification.groovy)
-
-#### Bidirectional Search *&larr; Essentially two simultaneous BFSs, one from each node; when their searches collide, we have found a path*
 
 #### [Binary Heap (Min-Heap and Max-Heap)](https://en.wikipedia.org/wiki/Heap_(data_structure))
 - **Insert**
