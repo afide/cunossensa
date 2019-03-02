@@ -2,17 +2,17 @@ class MyArray {
     /**
      * Binary Search.
      */
-    static int binarySearch(Integer[] a, Integer x) {
+    static int binarySearch(Integer[] arr, Integer x) {
         int low = 0;
-        int high = a.length - 1;
+        int high = arr.length - 1;
         int mid;
 
         while (low <= high) {
             mid = (low + high) / 2;
             System.out.print(mid);
-            if (a[mid].compareTo(x) < 0) {
+            if (arr[mid].compareTo(x) < 0) {
                 low = mid + 1;
-            } else if (a[mid].compareTo(x) > 0) {
+            } else if (arr[mid].compareTo(x) > 0) {
                 high = mid - 1;
             } else {
                 System.out.println();
@@ -61,21 +61,21 @@ class MyArray {
     /**
      * Merge Sort.
      */
-    static Integer[] mergeSort(Integer[] list) {
-        if (list.length <= 1) {
-            return list;
+    static Integer[] mergeSort(Integer[] arr) {
+        if (arr.length <= 1) {
+            return arr;
         }
         // Split the array in half in two parts
-        Integer[] first = new Integer[list.length / 2];
-        Integer[] second = new Integer[list.length - first.length];
-        System.arraycopy(list, 0, first, 0, first.length);
-        System.arraycopy(list, first.length, second, 0, second.length);
+        Integer[] first = new Integer[arr.length / 2];
+        Integer[] second = new Integer[arr.length - first.length];
+        System.arraycopy(arr, 0, first, 0, first.length);
+        System.arraycopy(arr, first.length, second, 0, second.length);
         // Sort each half recursively
         mergeSort(first);
         mergeSort(second);
         // Merge both halves together, overwriting to original array
-        merge(first, second, list);
-        return list;
+        merge(first, second, arr);
+        return arr;
     }
     private static void merge(Integer[] first, Integer[] second, Integer[] result) {
         int iFirst = 0, iSecond = 0, iMerged = 0;
