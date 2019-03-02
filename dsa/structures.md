@@ -33,9 +33,9 @@ Dealing with **Hash collisions** *&larr; Practically unavoidable*
 - **Undirected graph** *&larr; like a two-way street*
 - **Connected graph** *&larr; There is a path (edge) between every pair of vertices (nodes)*
 - **Acyclic graph**
+>[`MyGraph`](./src/main/java/MyGraph.java)
 
 #### [Adjacency List](https://en.wikipedia.org/wiki/Adjacency_list) *&larr; Every node stores a list of adjacent nodes. In an undirected graph, an edge like (a, b) would be stored twice: once in a's adjacent nodes and once in b's adjacent nodes.*
->[`MyGraph`](./src/main/java/MyGraph.java)
 
 #### [Adjacency Matrices](https://en.wikipedia.org/wiki/Adjacency_matrix) *&larr; An `NxN` boolean matrix (where `N` is the number of nodes), where a true value at `matrix[i][j]` indicates an edge from node `i` to node `j`.*
 
@@ -54,10 +54,12 @@ Dealing with **Hash collisions** *&larr; Practically unavoidable*
 
 
 #### [Depth-First Search (DFS)](https://en.wikipedia.org/wiki/Tree_traversal) *&larr; Runtime: O(b^d); Memory: O(bd)*
->[`MyTree`](./src/main/java/MyTree.java#L32-L64)
+>[`MyTree#depthFirstSearchLNR()`](./src/main/java/MyTree.java#L32-L42)
+>[`MyTree#depthFirstSearchNLR()`](./src/main/java/MyTree.java#L43-L53)
+>[`MyTree#depthFirstSearchLRN()`](./src/main/java/MyTree.java#L54-L64)
 
 #### [Breadth-First Search (BFS)](https://en.wikipedia.org/wiki/Tree_traversal) *&larr; Runtime: O(b^d); Memory: O(b^d)*
->[`MyTree`](./src/main/java/MyTree.java#L65-L90)
+>[`MyTree#breadthFirstSearch()`](./src/main/java/MyTree.java#L65-L90)
 
 #### Bidirectional Search *&larr; Essentially two simultaneous BFSs, one from each node; when their searches collide, we have found a path*
 
