@@ -1,5 +1,5 @@
 ### [Big O / Time complexity / Asymptotic runtime](http://bigocheatsheet.com)
-O(1) > O(log(n)) > O(n) > O(n log(n)) > O(n^2) > O(2^n) > O(n!)
+O(1) < O(log(n)) < O(n) < O(n log(n)) < O(n^2) < O(2^n) < O(n!)
 - For many - probably most - algorithms, the worst case and the expected case are the same.
 - **Space complexity** is a parallel concept to **time complexity**
     - array of size **n** *&larr; require 0(n) space*
