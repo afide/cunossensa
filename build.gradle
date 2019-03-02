@@ -1,0 +1,10 @@
+description = 'CS and other fundamentals'
+defaultTasks 'build'
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+subprojects {
+    version = '0.1'
+}
