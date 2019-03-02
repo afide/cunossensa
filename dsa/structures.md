@@ -17,16 +17,16 @@ Dealing with **Hash collisions** *&larr; Practically unavoidable*
 - Amortized insertion time *&larr; still O(1)*
 
 **StringBuilder** *&larr; Creates a resizable array of all the strings*
-See [`MyStringBuilder`](./src/main/java/MyStringBuilder.java)
+>[`MyStringBuilder`](./src/main/java/MyStringBuilder.java)
 
 ### [Linked List](https://en.wikipedia.org/wiki/Linked_list)
-See [`MyLinkedList<T>`](./src/main/java/MyLinkedList.java)
+>[`MyLinkedList<T>`](./src/main/java/MyLinkedList.java)
 
 ### [Stack](https://en.wikipedia.org/wiki/Stack_\(abstract_data_type\))
-See [`MyStack<T>`](./src/main/java/MyStack.java)
+>[`MyStack<T>`](./src/main/java/MyStack.java)
 
 ### [Queue](https://en.wikipedia.org/wiki/Queue_\(abstract_data_type\))
-See [`MyQueue<T>`](./src/main/java/MyQueue.java)
+>[`MyQueue<T>`](./src/main/java/MyQueue.java)
 
 ### [Graph](https://en.wikipedia.org/wiki/Graph_\(abstract_data_type\)) *&larr;  A collection of nodes with edges between (some of) them*
 - **Directed graph** *&larr; like a one-way street*
@@ -35,7 +35,7 @@ See [`MyQueue<T>`](./src/main/java/MyQueue.java)
 - **Acyclic graph**
 
 #### [Adjacency List](https://en.wikipedia.org/wiki/Adjacency_list) *&larr; Every node stores a list of adjacent nodes. In an undirected graph, an edge like (a, b) would be stored twice: once in a's adjacent nodes and once in b's adjacent nodes.*
-See [`MyGraph`](./src/main/java/MyGraph.java)
+>[`MyGraph`](./src/main/java/MyGraph.java)
 
 #### [Adjacency Matrices](https://en.wikipedia.org/wiki/Adjacency_matrix) *&larr; An `NxN` boolean matrix (where `N` is the number of nodes), where a true value at `matrix[i][j]` indicates an edge from node `i` to node `j`.*
 
@@ -54,10 +54,10 @@ See [`MyGraph`](./src/main/java/MyGraph.java)
 
 
 #### [Depth-First Search (DFS)](https://en.wikipedia.org/wiki/Tree_traversal) *&larr; Runtime: O(b^d); Memory: O(bd)*
-See [`MyTree`](./src/main/java/MyTree.java#L32-L64)
+>[`MyTree`](./src/main/java/MyTree.java#L32-L64)
 
 #### [Breadth-First Search (BFS)](https://en.wikipedia.org/wiki/Tree_traversal) *&larr; Runtime: O(b^d); Memory: O(b^d)*
-See [`MyTree`](./src/main/java/MyTree.java#L65-L90)
+>[`MyTree`](./src/main/java/MyTree.java#L65-L90)
 
 #### Bidirectional Search *&larr; Essentially two simultaneous BFSs, one from each node; when their searches collide, we have found a path*
 
