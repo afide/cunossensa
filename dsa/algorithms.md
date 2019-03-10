@@ -28,7 +28,7 @@ Runtime: O(n log(n)); Memory: O(n).
 ###### Test
 >[`MyArraySpecification`](./src/test/groovy/MyArraySpecification.groovy)
 
-#### [Depth-First Search (DFS)](https://en.wikipedia.org/wiki/Tree_traversal)
+### [Depth-First Search (DFS)](https://en.wikipedia.org/wiki/Tree_traversal)
 Runtime: O(b^d); Memory: O(bd).
 ###### Main
 >[`MyTree#depthFirstSearchLNR()`](./src/main/java/MyTree.java#L32-L42)
@@ -40,14 +40,14 @@ Runtime: O(b^d); Memory: O(bd).
 ###### Test
 >[`MyTreeSpecification`](./src/test/groovy/MyTreeSpecification.groovy)
 
-#### [Breadth-First Search (BFS)](https://en.wikipedia.org/wiki/Tree_traversal)
+### [Breadth-First Search (BFS)](https://en.wikipedia.org/wiki/Tree_traversal)
 Runtime: O(b^d); Memory: O(b^d).
 ###### Main
 >[`MyTree#breadthFirstSearch()`](./src/main/java/MyTree.java#L65-L90)
 ###### Test
 >[`MyTreeSpecification`](./src/test/groovy/MyTreeSpecification.groovy)
 
-#### Bidirectional Search
+### Bidirectional Search
 Essentially two simultaneous BFSs, one from each node; when their searches collide, we have found a path
 
 ### More Information
