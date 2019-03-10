@@ -5,7 +5,7 @@ import spock.lang.Specification
  */
 class MyStringBuilderSpecification extends Specification{
     def 'test simple string builder'() {
-        given: 'an list of words'
+        given: 'a list of words'
         String[] words = ['foo', 'bar', 'baz', 'qux']
 
         expect: 'the words getting concatenated to a sentence'

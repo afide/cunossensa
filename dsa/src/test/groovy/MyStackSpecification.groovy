@@ -14,7 +14,7 @@ class MyStackSpecification extends Specification {
     }
 
     @Unroll def 'test string stack add and remove'() {
-        expect: 'it to be empty'
+        expect: 'the stack to be initially empty'
         stack.isEmpty()
 
         when: 'an item is pushed on the stack'
@@ -27,10 +27,8 @@ class MyStackSpecification extends Specification {
         when: 'an item is popped from the stack'
         String data = stack.pop()
 
-        then: 'the data received is as expected'
+        then: 'the data received is as expected and the peak is now the next node, in this case the stack is empty again'
         data == 'foo'
-
-        and: 'the stack is empty again'
         stack.isEmpty()
     }
 
@@ -49,7 +47,7 @@ class MyStackSpecification extends Specification {
         when: 'an item is popped from the stack'
         String item = stack.pop()
 
-        then: 'the item data is as expected'
+        then: 'the item data is as expected and the peak is now the next node'
         item == data
 
         where: 'the items are ordered in LIFO order'

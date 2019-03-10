@@ -12,7 +12,7 @@ class MyLinkedListSpecification extends Specification {
         list.size == 1
         list.getAtIndex(0) == 'bar'
 
-        when: 'we add an item at the tail'
+        when: 'an item is added at the tail'
         list.addAtTail('qux')
 
         then: 'the size and values change accordingly'
@@ -20,7 +20,7 @@ class MyLinkedListSpecification extends Specification {
         list.getAtIndex(0) == 'bar'
         list.getAtIndex(1) == 'qux'
 
-        when: 'we add an item at the head'
+        when: 'an item is added at the head'
         list.addAtHead('foo')
 
         then: 'the size and values change accordingly'
@@ -29,7 +29,7 @@ class MyLinkedListSpecification extends Specification {
         list.getAtIndex(1) == 'bar'
         list.getAtIndex(2) == 'qux'
 
-        when: 'we add an item at an index'
+        when: 'an item is added at a particular index'
         list.addAtIndex(2,'baz')
 
         then: 'the size and values change accordingly'

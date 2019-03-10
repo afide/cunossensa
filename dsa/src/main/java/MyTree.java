@@ -1,5 +1,5 @@
 class MyTree {
-    private static class Node {
+    static class Node {
         boolean visited;
         String name;
         Node[] children;

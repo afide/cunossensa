@@ -10,12 +10,12 @@ class MyQueueSpecification extends Specification {
     @Shared String[] items = ['foo', 'bar', 'baz', 'qux']
 
     def setupSpec() {
-        given: 'an instance of a stack'
+        given: 'an instance of a queue'
         queue = new MyQueue<>()
     }
 
     @Unroll def 'test string queue add and remove'() {
-        expect: 'it to be empty'
+        expect: 'the queue to be initially empty'
         queue.isEmpty()
 
         when: 'an item is added to the queue'
@@ -28,10 +28,8 @@ class MyQueueSpecification extends Specification {
         when: 'an item is removed from the queue'
         String data = queue.remove()
 
-        then: 'the latest node is the previous value'
+        then: 'the data received is as expected and the peak is now the next node, in this case the queue is empty again'
         data == 'foo'
-
-        and: 'the queue is empty again'
         queue.isEmpty()
     }
 
@@ -50,7 +48,7 @@ class MyQueueSpecification extends Specification {
         when: 'an item is removed from the queue'
         String item = queue.remove()
 
-        then: 'the item data is as expected'
+        then: 'the item data is as expected and the peak is now the next node'
         item == data
 
         where: 'the items are ordered in FIFO order'
