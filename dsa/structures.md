@@ -22,19 +22,19 @@ Dealing with **Hash collisions** *&larr; Practically unavoidable*
 
 ### [Linked List](https://en.wikipedia.org/wiki/Linked_list)
 ###### Main
->[`MyLinkedList<T>`](./src/main/java/MyLinkedList.java)
+>[`MyLinkedList<T>`](./src/main/java/MyLinkedList.java#L2-L14)
 ###### Test
 >[`MyLinkedListSpecification`](./src/test/groovy/MyLinkedListSpecification.groovy)
 
 ### [Stack](https://en.wikipedia.org/wiki/Stack_\(abstract_data_type\))
 ###### Main
->[`MyStack<T>`](./src/main/java/MyStack.java)
+>[`MyStack<T>`](./src/main/java/MyStack.java#L4-L11)
 ###### Test
 >[`MyStackSpecification`](./src/test/groovy/MyStackSpecification.groovy)
 
 ### [Queue](https://en.wikipedia.org/wiki/Queue_\(abstract_data_type\))
 ###### Main
->[`MyQueue<T>`](./src/main/java/MyQueue.java)
+>[`MyQueue<T>`](./src/main/java/MyQueue.java#L4-L12)
 ###### Test
 >[`MyQueueSpecification`](./src/test/groovy/MyQueueSpecification.groovy)
 
@@ -45,7 +45,7 @@ A collection of nodes with edges between (some of) them.
 - **Connected graph** *&larr; There is a path (edge) between every pair of vertices (nodes)*
 - **Acyclic graph**
 ###### Main
->[`MyGraph`](./src/main/java/MyGraph.java)
+>[`MyGraph`](./src/main/java/MyGraph.java#L2-L6)
 
 #### [Adjacency List](https://en.wikipedia.org/wiki/Adjacency_list)
 Every node stores a list of adjacent nodes. In an undirected graph, an edge like (a, b) would be stored twice: once in a's adjacent nodes and once in b's adjacent nodes.
