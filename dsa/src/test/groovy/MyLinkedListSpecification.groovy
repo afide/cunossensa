@@ -8,7 +8,7 @@ class MyLinkedListSpecification extends Specification {
         given: 'an instance of a linked list'
         MyLinkedList<String> list = new MyLinkedList<>('bar')
 
-        expect: 'the list size to be 0'
+        expect: 'the list size to be 1'
         list.size == 1
         list.getAtIndex(0) == 'bar'
 
