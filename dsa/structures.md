@@ -13,7 +13,7 @@ Dealing with **Hash collisions** *&larr; Practically unavoidable*
 
 ### [Array List](https://en.wikipedia.org/wiki/Dynamic_array)
 - Resizes itself as needed *&larr; Still provids O(1) access*
-- Typically, when the array is full, the array doubles in size *&larr; Each doubling takes 0(n) time, but happens rarely*
+- Typically, when the array is full, the array doubles in size *&larr; Each doubling takes O(n) time, but happens rarely*
 - Amortized insertion time *&larr; still O(1)*
 
 **StringBuilder** *&larr; Creates a resizable array of all the strings*

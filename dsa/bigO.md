@@ -2,10 +2,10 @@
 O(1) < O(log(n)) < O(n) < O(n log(n)) < O(n^2) < O(2^n) < O(n!)
 - For many - probably most - algorithms, the worst case and the expected case are the same.
 - **Space complexity** is a parallel concept to **time complexity**
-    - array of size **n** *&larr; require 0(n) space*
-    - two-dimensional array of size **n x n** *&larr;  0(n^2) space*
-- Expresses how the runtime **scales** *&larr; 0(n) is not always better than O(n^2)*
-- Describes the **rate of increase** *&larr; It is very possible for O(n) code to run faster than 0(1) code for specific inputs*
+    - array of size **n** *&larr; require O(n) space*
+    - two-dimensional array of size **n x n** *&larr;  O(n^2) space*
+- Expresses how the runtime **scales** *&larr; O(n) is not always better than O(n^2)*
+- Describes the **rate of increase** *&larr; It is very possible for O(n) code to run faster than O(1) code for specific inputs*
 - **Drop the constants in runtime**
     - O(2n) &rarr; O(n)
 - **Drop the non-dominant terms**
