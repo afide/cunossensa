@@ -1,6 +1,7 @@
 ### [Bit Manipulation](https://codeburst.io/your-guide-to-bit-manipulation-48e7692f314a)
 
 ### Dynamic Programming
+In mathematics, the [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number), commonly denoted F<sub>n</sub> form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1.
 ##### Top-Down Dynamic Programming (or Memoization)
 ```
 int fibonacci(int n) {

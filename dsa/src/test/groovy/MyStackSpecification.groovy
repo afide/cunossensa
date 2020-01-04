@@ -13,7 +13,7 @@ class MyStackSpecification extends Specification {
         stack = new MyStack<>()
     }
 
-    @Unroll def 'test string stack add and remove'() {
+    def 'test string stack add and remove'() {
         expect: 'the stack to be initially empty'
         stack.isEmpty()
 

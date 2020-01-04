@@ -32,6 +32,6 @@ Threads within a given process share the same memory space:
 ### [Deadlocks](https://en.wikipedia.org/wiki/Deadlock)
 In order for a deadlock to occur, you must have all four of the following conditions met:
 1. **Mutual Exclusion** *&larr; Only one process can access a resource at a given time*
-1. **Mutual Exclusion** *&larr; Processes already holding a resource can request additional resources, without relinquishing their current resources*
+1. **Resource Holding** *&larr; Processes already holding a resource can request additional resources, without relinquishing their current resources*
 1. **No Preemption** *&larr; One process cannot forcibly remove another process' resource*
 1. **Circular Wait** *&larr; Circular chain where each process is waiting on another resource in the chain*

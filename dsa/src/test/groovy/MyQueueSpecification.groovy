@@ -14,7 +14,7 @@ class MyQueueSpecification extends Specification {
         queue = new MyQueue<>()
     }
 
-    @Unroll def 'test string queue add and remove'() {
+    def 'test string queue add and remove'() {
         expect: 'the queue to be initially empty'
         queue.isEmpty()
 
